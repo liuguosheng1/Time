@@ -15,18 +15,5 @@ public class Test {
 		String mergedString = strings.stream().filter(string -> !string.isEmpty()).collect(Collectors.joining(","));
 		System.out.println("ºÏ²¢×Ö·û´®: " + mergedString);
 	}
-	public List<String> buildArray(int[] target, int n) {
-		List<String> list=new ArrayList<String>();
-        for(int j=0;j<target.length;j++) {
-        	if(target[j]==j+1) {
-        		list.add("Push");
-        	}else {
-        		list.add("Push");
-        		list.add("Pop");
-        		j--;
-        	}
-        }
-        return list;
-    }
 
 }
